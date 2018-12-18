@@ -53,6 +53,7 @@ article p {
   color: #e7c1a6;
   background: url("../img/principle_bg.jpg") repeat-y center;
   padding: 50px 0;
+  margin-top: 30px;
 }
 
 .sec2 h1 {
@@ -128,6 +129,7 @@ article p {
 
 .sec4 {
   background: url("../img/case_bg.jpg") repeat-y center;
+  margin-top: 60px;
 }
 
 .sec4 ul h1 {
@@ -183,6 +185,7 @@ footer {
   background-color: #a5581d;
   padding-top: 80px;
   padding-bottom: 50px;
+  margin-top: 60px;
 }
 
 footer ul {
