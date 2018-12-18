@@ -1,3 +1,8 @@
+@mixin title 
+    font-size: 32px
+    font-weight: normal
+    margin-bottom: 37px
+    margin-top: 50px
 body *
     font-family: "microsoft yahei"
 article p
@@ -16,10 +21,7 @@ article p
             font-size: 16px
     .history
         h1 
-            font-size: 32px
-            font-weight: normal
-            margin-bottom: 37px
-            margin-top: 50px
+            @include title
         li
             &:hover
                 cursor: pointer
@@ -42,6 +44,68 @@ article p
         font-size: 16px
         line-height: 29px
 
+.sec3
+    .series
+        h1 
+            @include title
+        p.s 
+            line-height: 27px
+            font-size: 16px
+            margin-bottom: 27px
+            color: #333
+            a
+                color: #e76200
+                font-weight: bold
+        .xs4
+            margin-bottom: 15px
+        .intro
+            background-color: #eee
+            padding: 23px
+            p 
+                margin-bottom: 16px
+            .title
+                font-size: 20px
+                font-weight: bold
+            ul.adv  
+                li 
+                    font-size: 16px
+                    line-height: 38px
+                    color: #555
+            a 
+                font-size: 16px
+                width: 122px
+                height: 40px
+                line-height: 40px
+            a.float-left 
+                background-color: #e76200
+                color: #fff 
+            a.float-right
+                border: 1px solid #e76200
+                color: #e76200
+.sec4
+    background: url("../img/case_bg.jpg") repeat-y center
+    ul 
+        h1 
+            @include title
+        li 
+            div
+                -moz-box-shadow: 0 0 12px #888
+                box-shadow:  0 0 12px #888
+                p 
+                    height: 50px
+                    line-height: 50px
+                    font-size: 16px
+                    color: #333
+                    background-color: #fff
+            &:hover
+                div
+                    img
+                        width: 150% 
+@media(min-width: 1200px)
+    .sec3 .series .intro
+        padding: 44px 42px 38px
+        a.float-right
+            right: 42px !important
 @media(max-width: 1199px)
     .banner img
         width: 100%
@@ -52,6 +116,18 @@ article p
             margin: 0 25px !important
             font-size: 14px !important
             line-height: 30px !important
+    .sec3 .series .intro 
+        position: relative
+        min-height: 350px
+        a 
+            position: absolute
+            bottom: 38px
+        a.float-right
+            right: 23px
+        &:hover 
+            ul li , p 
+                color: #e76200
+        
 @media(max-width: 999px)
     .sec2 
         padding: 40px 0 38px
@@ -62,8 +138,18 @@ article p
         .history p      
             margin: 0 20px !important
             line-height: 18px !important
-    
-
+    .mb1
+        margin-bottom: 56px
+    .sec3 .series .intro 
+        min-height: 388px
+        padding: 20px
+        ul.adv li
+            font-size: 14px
+            line-height: 28px
+            color: #555
+        a
+            width: 100%
+        
 @media(max-width: 759px)
     .history li 
         width: 50%
@@ -73,7 +159,7 @@ article p
 @media(min-width: 400px) and (max-width: 759px)
     .sec1
         .history p 
-            line-height: 22px !important
+            line-height: 22px !important 
             margin: 0 15% !important
 @media(min-width: 300px)
     .sec1
