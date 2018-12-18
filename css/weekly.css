@@ -1,3 +1,10 @@
+.line-big .x1, .line-big .x10, .line-big .x11, .line-big .x12, .line-big .x2, .line-big .x3, .line-big .x4, .line-big .x5, .line-big .x6, .line-big .x7, .line-big .x8, .line-big .x9, .line-big .xb1, .line-big .xb10, .line-big .xb11, .line-big .xb12, .line-big .xb2, .line-big .xb3, .line-big .xb4, .line-big .xb5, .line-big .xb6, .line-big .xb7, .line-big .xb8, .line-big .xb9, .line-big .xl1, .line-big .xl10, .line-big .xl11, .line-big .xl12, .line-big .xl2, .line-big .xl3, .line-big .xl4, .line-big .xl5, .line-big .xl6, .line-big .xl7, .line-big .xl8, .line-big .xl9, .line-big .xm1, .line-big .xm10, .line-big .xm11, .line-big .xm12, .line-big .xm2, .line-big .xm3, .line-big .xm4, .line-big .xm5, .line-big .xm6, .line-big .xm7, .line-big .xm8, .line-big .xm9, .line-big .xs1, .line-big .xs10, .line-big .xs11, .line-big .xs12, .line-big .xs2, .line-big .xs3, .line-big .xs4, .line-big .xs5, .line-big .xs6, .line-big .xs7, .line-big .xs8, .line-big .xs9 {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 1px;
+}
+
 body * {
   font-family: "microsoft yahei";
 }
@@ -179,7 +186,7 @@ article p {
 
 .sec4 ul li.xm3 div ul li {
   font-size: 14px;
-  line-height: 33px;
+  line-height: 32px;
   color: #e76200;
 }
 
@@ -234,6 +241,10 @@ footer .litbanner img {
 }
 
 @media (min-width: 1200px) {
+  .line-big {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
   .sec3 .series .intro {
     padding: 44px 42px 38px;
   }
@@ -257,11 +268,11 @@ footer .litbanner img {
 
 @media (min-width: 1000px) and (max-width: 1199px) {
   .sec4 ul ul {
-    padding: 13px 0 12px 30px;
+    padding: 11px 0 11px 30px;
   }
   .sec4 ul ul li {
     font-size: 12px !important;
-    line-height: 28px !important;
+    line-height: 27px !important;
   }
 }
 
@@ -274,7 +285,7 @@ footer .litbanner img {
   }
   .sec3 .series .intro {
     position: relative;
-    min-height: 350px;
+    min-height: 380px;
   }
   .sec3 .series .intro a {
     position: absolute;
@@ -326,10 +337,10 @@ footer .litbanner img {
   }
   .sec4 ul ul {
     padding-left: 50px;
-    padding-top: 4px;
+    padding-top: 2px;
   }
   .sec4 ul ul li {
-    line-height: 50px !important;
+    line-height: 49px !important;
     font-size: 16px !important;
   }
   footer .writer p {
