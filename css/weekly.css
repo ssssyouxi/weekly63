@@ -15,6 +15,10 @@ article p {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .sec1 .guide {
@@ -30,6 +34,7 @@ article p {
   font-weight: normal;
   margin-bottom: 37px;
   margin-top: 50px;
+  color: #333;
 }
 
 .sec1 .history li:hover {
@@ -72,6 +77,7 @@ article p {
   font-weight: normal;
   margin-bottom: 37px;
   margin-top: 50px;
+  color: #333;
 }
 
 .sec3 .series p.s {
@@ -137,6 +143,7 @@ article p {
   font-weight: normal;
   margin-bottom: 37px;
   margin-top: 50px;
+  color: #333;
 }
 
 .sec4 ul li.xm3 {
@@ -176,8 +183,13 @@ article p {
   color: #e76200;
 }
 
+.sec4 ul li.xm3 div ul li:hover a {
+  text-decoration: underline;
+}
+
 .sec4 ul li.xm3 div ul li a {
   color: #e76200;
+  display: block;
 }
 
 footer {

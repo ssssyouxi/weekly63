@@ -30,25 +30,25 @@
             <div class="line-big history">
                 <h1 class="x12 text-center">发展历史</h1>
                 <ul class="list-unstyle">
-                    <li class="xs3 xl6 text-center margin-big-bottom">
+                    <li class="circle xs3 xl6 text-center margin-big-bottom">
                         <div>
                             <img class="img-responsive" src="./img/1.png" data-xb="./img/1.png" data-xm="./img/1_deep.png" />
                             <p>1806年,出现了用蒸汽机驱动的辊式破碎机。</p>
                         </div>
                     </li>
-                    <li class="xs3 xl6 text-center margin-big-bottom">
+                    <li class="circle xs3 xl6 text-center margin-big-bottom">
                         <div>
                             <img class="img-responsive" src="./img/2.png" data-xb="./img/2.png" data-xm="./img/2_deep.png" />
                             <p>1858年，美国人布莱克发明了破碎岩石的颚式破碎机，其结构形式为双肘板式（简单摆动式）。</p>
                         </div>
                     </li>
-                    <li class="xs3 xl6 text-center margin-big-bottom">
+                    <li class="circle xs3 xl6 text-center margin-big-bottom">
                         <div>
                             <img class="img-responsive" src="./img/3.png" data-xb="./img/3.png" data-xm="./img/3_deep.png" />
                             <p>1878年，美国发明了具有连续破碎动作的旋回破碎机。</p>
                         </div>
                     </li>
-                    <li class="xs3 xl6 text-center margin-big-bottom">
+                    <li class="circle xs3 xl6 text-center margin-big-bottom">
                         <div>
                             <img class="img-responsive" src="./img/4.png" data-xb="./img/4.png" data-xm="./img/4_deep.png" />
                             <p>20世纪50年代初，国内开始仿制生产复摆式破碎机。目前，广泛应用的是传统复摆式颚式破碎机。</p>
@@ -219,7 +219,8 @@
         if (($(window).width() + 17) >= 1200) {
             $(".banner img").attr("src", $(".banner img").attr("data-xm"));
             $(".sec2 embed").attr("width", "470")
-            $("li").hover(
+            $("li.circle").eq(1).find("img").attr("src", $("li.circle").eq(1).find("img").attr("data-xm"));
+            $("li.circle").hover(
                 function () {
                     $(this).find("img").attr("src", $(this).find("img").attr("data-xm"));
                 },
